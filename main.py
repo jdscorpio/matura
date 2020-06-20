@@ -30,9 +30,18 @@ def zadanie4_2(filename_in:str,filename_out:str):
 def zadanie4_3(filename_in:str,filename_out:str):
     output = open(filename_out,"a")
     output.write("\n4.3:\n")
+    tab = []
     with open(filename_in) as file:
         for line in file:
             n,txt = line.split()
+            if numEqualWord(int(n),txt):
+                tab.append(n + ' ' + txt)
+    for i in range(len(tab)):
+        n1,txt1 = tab[i].split()
+        for j in range(i+1,len(tab)):
+            n2,txt2 = tab[j].split()
+            nn,txtt = por(int(n1),txt1, int(n2),txt2)
+    output.write(f"{len(txtt)} {txtt}")
 
 def main():
     filein = "przyklad.txt"
