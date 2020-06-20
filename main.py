@@ -18,7 +18,13 @@ def zadanie4_1(filename_in:str,filename_ou:str):
     
 
 def main():
-    zadanie4_1("przyklad.txt","odp.txt")
+    filein = "przyklad.txt"
+    fileout = "odp.txt"
+    zadanie4_1(filein, fileout)
+
+    filein = "pary.txt"
+    fileout = "wynik4.txt"
+    zadanie4_1(filein, fileout)
 
 if __name__ == "__main__":
     main()
