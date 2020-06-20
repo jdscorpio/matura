@@ -5,6 +5,7 @@
 '''
 from zadanie1 import *
 from zadanie2 import *
+from zadanie3 import *
 
 def zadanie4_1(filename_in:str,filename_out:str):
     output = open(filename_out,"w")
@@ -26,15 +27,25 @@ def zadanie4_2(filename_in:str,filename_out:str):
             temp = LCF(txt)
             output.write(f"{temp[0]} {temp[1]}\n")
 
+def zadanie4_3(filename_in:str,filename_out:str):
+    output = open(filename_out,"a")
+    output.write("\n4.2:\n")
+    with open(filename_in) as file:
+        for line in file:
+            n,txt = line.split()
+
 def main():
     filein = "przyklad.txt"
     fileout = "odp.txt"
     zadanie4_1(filein, fileout)
     zadanie4_2(filein, fileout)
+    zadanie4_3(filein, fileout)
 
     filein = "pary.txt"
     fileout = "wynik4.txt"
     zadanie4_1(filein, fileout)
+    zadanie4_2(filein, fileout)
+    zadanie4_3(filein, fileout)
 
 if __name__ == "__main__":
     main()
