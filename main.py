@@ -29,7 +29,7 @@ def zadanie4_2(filename_in:str,filename_out:str):
 
 def zadanie4_3(filename_in:str,filename_out:str):
     output = open(filename_out,"a")
-    output.write("\n4.2:\n")
+    output.write("\n4.3:\n")
     with open(filename_in) as file:
         for line in file:
             n,txt = line.split()
