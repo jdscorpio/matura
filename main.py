@@ -18,7 +18,13 @@ def zadanie4_1(filename_in:str,filename_out:str):
                 output.write(f"{n} {temp[0]} {temp[1]}\n") 
     
 def zadanie4_2(filename_in:str,filename_out:str):
-    print(indexMax([2,3,1]))
+    output = open(filename_out,"a")
+    output.write("\n4.2:\n")
+    with open(filename_in) as file:
+        for line in file:
+            n,txt = line.split()
+            temp = LCF(txt)
+            output.write(f"{temp[0]} {temp[1]}\n")
 
 def main():
     filein = "przyklad.txt"
