@@ -6,8 +6,8 @@
 from zadanie1 import *
 from zadanie2 import *
 
-def zadanie4_1(filename_in:str,filename_ou:str):
-    output = open(filename_ou,"w")
+def zadanie4_1(filename_in:str,filename_out:str):
+    output = open(filename_out,"w")
     output.write("4.1:\n")   
 
     with open(filename_in) as file:
@@ -17,11 +17,14 @@ def zadanie4_1(filename_in:str,filename_ou:str):
             if temp[0]!=0:
                 output.write(f"{n} {temp[0]} {temp[1]}\n") 
     
+def zadanie4_2(filename_in:str,filename_out:str):
+    print(indexMax([2,3,1]))
 
 def main():
     filein = "przyklad.txt"
     fileout = "odp.txt"
     zadanie4_1(filein, fileout)
+    zadanie4_2(filein, fileout)
 
     filein = "pary.txt"
     fileout = "wynik4.txt"
