@@ -6,8 +6,7 @@
 from zadanie1 import *
 
 def zadanie4_1():
-    print(isPrime(13))
-    print(isPrime(20))
+    print(primes())
 
 def main():
     zadanie4_1()
