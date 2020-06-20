@@ -3,6 +3,7 @@
     Autor: Jarosław Drzeżdżon
     Data: 19 czerwca 2020 r.
 '''
+
 from zadanie1 import *
 from zadanie2 import *
 from zadanie3 import *
