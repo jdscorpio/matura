@@ -6,7 +6,9 @@
 from zadanie1 import *
 
 def zadanie4_1():
-    print(primes())
+    print(goldbach(20))
+    print(goldbach(24))
+    print(goldbach(6))
 
 def main():
     zadanie4_1()
