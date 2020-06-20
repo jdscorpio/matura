@@ -4,6 +4,7 @@
     Data: 19 czerwca 2020 r.
 '''
 from zadanie1 import *
+from zadanie2 import *
 
 def zadanie4_1(filename_in:str,filename_ou:str):
     output = open(filename_ou,"w")
